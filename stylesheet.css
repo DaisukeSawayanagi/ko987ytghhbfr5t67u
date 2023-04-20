@@ -1,0 +1,36 @@
+body{
+    font-family:"Avenir Next";
+    color:dimgrey;
+}
+
+.header{
+    text-align: center;
+}
+
+.header-logo{
+    font-size:50px;
+    color:rgb(184, 141, 141);
+    float: CENTER;
+}
+
+.main{
+    text-align: center;
+}
+
+/* inputとtextareaのCSSを指定してください */
+input,textarea {
+    width:400px;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:20px;
+    font-size:18px;
+    border:1px solid #dee7ec;
+  }
+  
+  
+  /* contact-submitのCSSを指定してください */
+  .contact-submit{
+    background-color:#dee7ec;
+    color:#889eab;
+  }
+  
