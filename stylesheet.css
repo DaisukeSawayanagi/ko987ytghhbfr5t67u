@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+* {
+  box-sizing:border-box;
+}
+
+.clear {
+  clear:left
+}
+
+
 html {
   font-size: 100%;
 }
@@ -55,19 +64,34 @@ li {
 }
 .site-title {
   float: left;
-  padding: 10px;
+  padding-left: 20px;
   color: white;
 }
+
+.site-title h1{
+  padding-left:20px
+}
+
 
 .header-right {
   float: right;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
+.navbar a {
+  padding: 20px 10px 0 0 ;
   display: block;
+  float:left;
+  font-size:20px;
+  font-weight:normal;
+  
+}
+
+.navbar {
+  color:white
+}
+
+.menu-icon {
+  color:white;
 }
 
 /*-------------------------------------------
@@ -87,7 +111,7 @@ Mainvisual
   /* max-width: 1920px; */
   height: 600px;
   object-fit: cover;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 /*-------------------------------------------
@@ -97,7 +121,7 @@ About
   text-align: center;
 }
 
-.about .content {
+.about .mainvisual-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,30 +140,32 @@ About
 contents
 -------------------------------------------*/
 .contents {
-  margin-top: 200px;
+  margin: 150px 0;
   text-align: center;
 }
 
-.contents ul {
-  display: flex;
-  justify-content: space-between;
+.contents-list{
+  /* display: flex; */
+  /* justify-content: space-between; */
   margin: 20px;
 }
-.contents li {
-  width: 32%;
+.content {
+  width: 33.33%;
+  float:left;
 }
 
-.contents img {
-  height: 300px;
+.contents-list img {
   border-radius: 10px;
 }
 
-.contents h3 {
+.contents-list h3 {
   font-size: 20px;
 }
 
-.content {
-    margin-bottom: 40px;
+
+
+.part {
+  margin-bottom: 40px;
 }
 
 .content-title {
@@ -147,73 +173,56 @@ contents
     font-family: "Segoe UI";
 }
 
-.First {
-  padding: 10px;
+.content {
+  padding: 50px;
   padding-bottom: 30px;
 }
 
-.Second {
-  padding: 10px;
-  padding-bottom: 30px;
-}
 
-.Third {
-  padding: 10px;
-  padding-bottom: 30px;
-}
-
-.First:hover {
+.content:hover {
   background-color: rgb(233, 246, 250);
   transition: all 1s;
 }
 
-.Second:hover {
-  background-color: rgb(233, 246, 250);
-  transition: all 1s;
-}
-
-.Third:hover {
-  background-color: rgb(233, 246, 250);
-  transition: all 1s;
-}
-
-.btn-first {
+.btn_ {
   padding: 5px 20px;
   background-color: #5dca88;
   box-shadow: 0 7px #1a7940;
   border-radius: 5px;
   color: white;
+  display: inline-block;
 }
-.btn-first:active {
+.btn_:active {
   box-shadow: none;
   position: relative;
   top: 7px;
 }
 
-.btn-second {
-  padding: 5px 20px;
-  background-color: #5dca88;
-  box-shadow: 0 7px #1a7940;
-  border-radius: 5px;
-  color: white;
-}
-.btn-second:active {
-  box-shadow: none;
-  position: relative;
-  top: 7px;
+
+/*-------------------------------------------
+contact form
+-------------------------------------------*/
+.contact {
+  text-align:center;
+  margin-top: 100px;
 }
 
-.btn-third {
-  padding: 5px 20px;
-  background-color: #5dca88;
-  box-shadow: 0 7px #1a7940;
-  border-radius: 5px;
-  color: white;
+.envelope {
+  float:left;
+  margin-left:200px;
+  height:20px;
 }
-.btn-third:active {
-  box-shadow: none;
-  position: relative;
-  top: 7px;
+
+.ad{
+  width:200px;
+  margin-bottom:30px;
+  font-size:18px;
+}
+.txtarea {
+  width:400px;
+  margin-bottom:20px;
+  padding:20px;
+  font-size:18px;
 }
 
 /*-------------------------------------------
@@ -227,4 +236,31 @@ footer
   opacity: 0.5;
   color: white;
   padding: 10px;
+}
+
+
+
+
+/*-------------------------------------------
+responsive
+-------------------------------------------*/
+@media(max-width:1000px){
+  .content {
+    width:50%
+  }
+}
+@media(max-width:670px){
+
+  .content {
+    width:100%
+  }
+
+  .btn_ {
+    width:100%
+  }
+
+  .txtarea{
+    width: 80%;
+  }
+
 }
