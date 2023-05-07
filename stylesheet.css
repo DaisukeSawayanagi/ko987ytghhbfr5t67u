@@ -21,6 +21,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   padding-top:0px;
+
 }
 a {
   text-decoration: none;
@@ -93,12 +94,9 @@ li {
   
 }
 
-.navbar {
-  color:white
-}
-
-.menu-icon {
+.header-right a {
   color:white;
+  padding-left:10px
 }
 
 
@@ -163,7 +161,7 @@ contents
 
 .content {
   width: 33.33%;
-  float:left;
+  float:left; 
 }
 
 .contents-list img {
